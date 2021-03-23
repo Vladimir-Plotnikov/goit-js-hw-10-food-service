@@ -13,12 +13,9 @@
             </p>
 
             <ul class="tag-list">
-                <li class="tag-list__item">Картофель</li>
-                <li class="tag-list__item">Чеснок</li>
-                <li class="tag-list__item">Сметана</li>
-                <li class="tag-list__item">Бекон</li>
-                <li class="tag-list__item">Твердый сыр</li>
-                <li class="tag-list__item">Зеленый лук</li>
+                {{#each this.ingredients}}
+                <li class="tag-list__item">{{this}}</li>
+                {{/each}}
             </ul>
         </div>
 
